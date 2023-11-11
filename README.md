@@ -94,7 +94,8 @@ def sarsa(env,
 ## OUTPUT:
 
 ### Optimal Policy:
-![image](https://github.com/Aashima02/sarsa-learning/assets/93427086/1f4fdf5c-6142-4194-b408-040fa4fa5716)
+<img width="553" alt="image" src="https://github.com/Aashima02/sarsa-learning/assets/93427086/1f4fdf5c-6142-4194-b408-040fa4fa5716">
+
 
 ### First Visit Monte Carlo Method:
 
