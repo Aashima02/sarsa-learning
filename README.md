@@ -49,25 +49,16 @@ The agent receives a reward of +1 for reaching the goal state (G). The agent rec
 
 ## SARSA LEARNING FUNCTION
 ```python
-def sarsa(env,
-          gamma=1.0,
-          init_alpha=0.5,
-          min_alpha=0.01,
-          alpha_decay_ratio=0.5,
-          init_epsilon=1.0,
-          min_epsilon=0.1,
-          epsilon_decay_ratio=0.9,
-          n_episodes=3000):
+def sarsa(env, gamma=1.0, init_alpha=0.5, min_alpha=0.01, alpha_decay_ratio=0.5,
+          init_epsilon=1.0, min_epsilon=0.1, epsilon_decay_ratio=0.9, n_episodes=3000):
     nS, nA = env.observation_space.n, env.action_space.n
     pi_track = []
     Q = np.zeros((nS, nA), dtype=np.float64)
     Q_track = np.zeros((n_episodes, nS, nA), dtype=np.float64)
     # Write your code here
     select_action = lambda state, Q, epsilon:np.argmax(Q[state]) if np.random.random() > epsilon else np.random.randint(len(Q[state]))
-    alphas = decay_schedule(init_alpha, min_alpha,
-                            alpha_decay_ratio, n_episodes)
-    epsilons = decay_schedule(init_epsilon, min_epsilon,
-                              epsilon_decay_ratio, n_episodes)
+    alphas = decay_schedule(init_alpha, min_alpha, alpha_decay_ratio, n_episodes)
+    epsilons = decay_schedule(init_epsilon, min_epsilon, epsilon_decay_ratio, n_episodes)
     for e in tqdm(range(n_episodes), leave=False):
       state, done = env.reset(), False
       action = select_action(state, Q, epsilons[e])
