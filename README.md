@@ -97,16 +97,20 @@ def sarsa(env,
 ![image](https://github.com/Aashima02/sarsa-learning/assets/93427086/1f4fdf5c-6142-4194-b408-040fa4fa5716)
 
 ### First Visit Monte Carlo Method:
-![image](https://github.com/Aashima02/sarsa-learning/assets/93427086/640e34aa-2f12-4e0d-855d-14a9adc98e8a)
+
+<img width="553" alt="image" src="https://github.com/Aashima02/sarsa-learning/assets/93427086/640e34aa-2f12-4e0d-855d-14a9adc98e8a">
 
 ### SARSA Learning Algorithm:
-![image](https://github.com/Aashima02/sarsa-learning/assets/93427086/42a7d093-dd4f-4ba7-b426-3c6d884bf2db)
+
+<img width="553" alt="image" src="https://github.com/Aashima02/sarsa-learning/assets/93427086/42a7d093-dd4f-4ba7-b426-3c6d884bf2db">
 
 ### Plot for State Value Function - Monte Carlo:
-![image](https://github.com/Aashima02/sarsa-learning/assets/93427086/1aae6455-9beb-4974-8661-783dd4958ce5)
+
+<img width="553" alt="image" src="https://github.com/Aashima02/sarsa-learning/assets/93427086/1aae6455-9beb-4974-8661-783dd4958ce5">
 
 ### Plot for State Value Function - SARSA Learning:
-![image](https://github.com/Aashima02/sarsa-learning/assets/93427086/3252d7ed-c2a3-480d-9a5c-2e7412a59a5f)
+
+<img width="553" alt="image" src="https://github.com/Aashima02/sarsa-learning/assets/93427086/3252d7ed-c2a3-480d-9a5c-2e7412a59a5f">
 
 
 ## RESULT:
