@@ -38,16 +38,11 @@ The agent receives a reward of +1 for reaching the goal state (G). The agent rec
    i. Initialize the starting state.
 
    ii. Repeat for each step of episode:
-   
-          a. Choose action from state using policy derived from Q (e.g., epsilon-greedy).
-   
-          b. Take action, observe reward and next state.
-   
-          c. Choose action from next state using policy derived from Q (e.g., epsilon-greedy).
-   
-          d. Update Q(s, a) := Q(s, a) + alpha * [R + gamma * Q(s', a') - Q(s, a)]
-   
-          e. Update the state and action.
+   * Choose action from state using policy derived from Q (e.g., epsilon-greedy).
+   * Take action, observe reward and next state.
+   * Choose action from next state using policy derived from Q (e.g., epsilon-greedy).
+   * Update Q(s, a) := Q(s, a) + alpha * [R + gamma * Q(s', a') - Q(s, a)]
+   * Update the state and action.
    
     iii. Until state is terminal.
 
